@@ -1,0 +1,31 @@
+﻿@model IEnumerable<AutomobileServiceStation.Models.ServiceSubType>
+
+
+
+@{
+    ViewBag.Title = "ServSubType";
+
+
+
+}
+
+
+
+
+
+@using (Html.BeginForm())
+{
+
+
+
+    <div class="col-md-6">
+        @Html.EditorForModel()
+        <input type="submit" class="btn btn-primary" value="Calculate" /><br />
+
+        <br /><a href="~/Payment/Payment">Click Here for payment<br /> Total:</a>
+        @ViewBag.tcost
+    </div>
+
+
+
+}
